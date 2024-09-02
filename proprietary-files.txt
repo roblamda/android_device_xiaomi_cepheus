@@ -50,10 +50,10 @@ vendor/firmware/tas2557_uCDSP_aac.bin
 vendor/firmware/tas2557_uCDSP_goer.bin
 
 # Audio hardware
-vendor/lib/hw/audio.primary.msmnile.so:vendor/lib/hw/audio.primary.cepheus.so
+vendor/lib/hw/audio.primary.msmnile.so:vendor/lib/hw/audio.primary.cepheus.so;FIX_SONAME
 vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
 vendor/lib/vndk/libxlog.so
-vendor/lib/liba2dpoffload.so:vendor/lib/liba2dpoffload_cepheus.so
+vendor/lib/liba2dpoffload.so:vendor/lib/liba2dpoffload_cepheus.so;FIX_SONAME
 vendor/lib/libadm.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioconfigstore.so
@@ -265,7 +265,7 @@ vendor/etc/init/init.batterysecret.rc
 vendor/etc/qdcm_calib_data_samsung_ea8076_fhd_cmd_dsi_panel.xml
 
 # Fingerprint
-vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so
+vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so;FIX_SONAME
 vendor/lib64/libarm_proxy_skel.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libhvx_proxy_stub.so
